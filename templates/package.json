@@ -1,0 +1,48 @@
+{
+  "name": "<%= appName %>",
+  "version": "<%= appVersion %>",
+  "description": "<%= appDescription %>",
+  "main": "app/index.jsx",
+  "scripts": {
+    "dev": "node --use_strict devServer",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Nadeem Bitar <nadeem@productatelier.com> (https://productatelier.com)",
+  "license": "MIT",
+  "devDependencies": {
+    "babel": "^5.8.23",
+    "babel-eslint": "^4.1.3",
+    "babel-loader": "^5.3.2",
+    "babel-plugin-react-transform": "^1.1.1",
+    "css-loader": "^0.19.0",
+    "eslint": "^1.7.1",
+    "eslint-loader": "^1.1.0",
+    "eslint-plugin-react": "^3.5.1",
+    "express": "^4.13.3",
+    "extract-text-webpack-plugin": "^0.8.2",
+    "file-loader": "^0.8.4",
+    "html-webpack-plugin": "^1.6.2",
+    "react-transform-catch-errors": "^1.0.0",
+    "react-transform-hmr": "^1.0.1",
+    "redbox-react": "^1.1.1",
+    "style-loader": "^0.12.4",
+    "url-loader": "^0.5.6",
+    "webpack": "^1.12.2",
+    "webpack-dev-middleware": "^1.2.0",
+    "webpack-hot-middleware": "^2.4.1"
+  },
+  "dependencies": {
+    "classnames": "^2.1.5",
+    "history": "^1.12.5",
+    "immutable": "^3.7.5",
+    "react": "^0.14.0",
+    "react-dom": "^0.14.0",
+    "react-redux": "^4.0.0",
+    "react-router": "^1.0.0-rc3",
+    "redux": "^3.0.2",
+    "redux-async": "^2.0.0",
+    "redux-logger": "^2.0.4",
+    "redux-thunk": "^1.0.0",
+    "reselect": "^2.0.0"
+  }
+}

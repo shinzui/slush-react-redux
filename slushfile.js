@@ -75,6 +75,10 @@ gulp.task('default', function (done) {
         message: 'What is the github username?',
         default: defaults.userName
     }, {
+        name: 'htmlTitle',
+        message: 'What is the HTML title for the app?',
+        default: 'React/Redux'
+    }, {
         type: 'confirm',
         name: 'moveon',
         message: 'Continue?'
