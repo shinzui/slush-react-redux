@@ -1,14 +1,14 @@
-# Slush React-redux-slush-generator [![Build Status](https://secure.travis-ci.org/shinzui/slush-react-redux-slush-generator.png?branch=master)](https://travis-ci.org/shinzui/slush-react-redux-slush-generator) [![NPM version](https://badge-me.herokuapp.com/api/npm/slush-react-redux-slush-generator.png)](http://badges.enytc.com/for/npm/slush-react-redux-slush-generator)
+# Slush React-redux-slush-generator [![NPM version](https://badge-me.herokuapp.com/api/npm/slush-react-redux.png)](http://badges.enytc.com/for/npm/slush-react-redux)
 
 > Redux and React boilerplate 
 
 
 ## Getting Started
 
-Install `slush-react-redux-slush-generator` globally:
+Install `slush-react-redux` globally:
 
 ```bash
-$ npm install -g slush-react-redux-slush-generator
+$ npm install -g slush-react-redux
 ```
 
 ### Usage
@@ -16,17 +16,17 @@ $ npm install -g slush-react-redux-slush-generator
 Create a new folder for your project:
 
 ```bash
-$ mkdir my-slush-react-redux-slush-generator
+$ mkdir my-react-redux-project
 ```
 
 Run the generator from within the new folder:
 
 ```bash
-$ cd my-slush-react-redux-slush-generator && slush react-redux-slush-generator
+$ cd my-react-redux-project && slush react-redux
 ```
 
 ## Support
-If you have any problem or suggestion please open an issue [here](https://github.com/shinzui/slush-react-redux-slush-generator/issues).
+If you have any problem or suggestion please open an issue [here](https://github.com/shinzui/slush-react-redux/issues).
 
 ## License 
 
