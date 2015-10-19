@@ -1,8 +1,8 @@
 {
     "name": "slush-react-redux",
     "description": "Slush React/Redux boilerplate generator",
-    "version": "0.0.1",
-    "homepage": "https://github.com/shinzui/slush-react-redux-slush-generator",
+    "version": "0.0.2",
+    "homepage": "https://github.com/shinzui/slush-react-redux",
     "author": {
         "name": "Nadeem Bitar",
         "email": "nadeem@productatelier.com"
@@ -35,6 +35,9 @@
         "iniparser": "^1.0.5"
     },
     "keywords": [
-        "slushgenerator"
+        "slushgenerator",
+        "react",
+        "redux",
+        "slush"
     ]
 }
