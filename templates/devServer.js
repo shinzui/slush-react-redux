@@ -8,13 +8,7 @@ var port = process.env.port || 9090
 
 var app = express()
 
-var compiler = webpack(config, (err, stats) => {
-  var json = stats.toJson()
-
-  if(json.errors.length) {
-    console.log(json.errors[0])
-  }
-})
+var compiler = webpack(config)
 
 app.use(require('webpack-hot-middleware')(compiler))
 
