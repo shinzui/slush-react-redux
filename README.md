@@ -1,4 +1,4 @@
-# Slush React-redux-slush-generator [![NPM version](https://badge-me.herokuapp.com/api/npm/slush-react-redux.png)](http://badges.enytc.com/for/npm/slush-react-redux)
+# slush-react-redux [![NPM version](https://badge-me.herokuapp.com/api/npm/slush-react-redux.png)](http://badges.enytc.com/for/npm/slush-react-redux)
 
 > Redux and React boilerplate 
 
