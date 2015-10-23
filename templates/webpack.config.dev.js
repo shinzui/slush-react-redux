@@ -5,7 +5,7 @@ var HtmlWebpackPlugin = require('html-webpack-plugin')
 var ROOT_PATH = path.resolve(__dirname)
 
 module.exports = {
-  devtools: 'source-map',
+  devtool: 'eval-source-map',
   resolve: {
     extensions: ['', '.js', '.jsx']
   },
