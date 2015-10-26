@@ -1,10 +1,9 @@
-var path = require('path')
 var express = require('express')
 var webpack = require('webpack')
 var config = require('./webpack.config.dev')
 
-var host = process.env.host || 'localhost'
-var port = process.env.port || 9090
+var host = process.env.HOST || 'localhost'
+var port = process.env.PORT || 9090
 
 var app = express()
 
@@ -12,11 +11,10 @@ var compiler = webpack(config)
 
 app.use(require('webpack-hot-middleware')(compiler))
 
-app.use(require('webpack-dev-middleware')(compiler, {
+var devMiddleware = app.use(require('webpack-dev-middleware')(compiler, {
   headers: {'access-control-allow-origin': '*'},
   publicpath: config.output.publicpath,
   contentbase: 'app',
-  historyapifallback: true,
   hot: true,
   inline: false,
   stats: {
@@ -28,8 +26,11 @@ app.use(require('webpack-dev-middleware')(compiler, {
   }
 }))
 
+/*Temp Hack to support react-router's history api
+ * https://github.com/webpack/webpack-dev-middleware/issues/39
+ */
 app.use(function (req, res, next) {
-  if (req.url.match(/^(\/[a-zA-Z-]+)+(.html)?(\?.+)?$/)) {
+  if (req.url.match(/^(\/[a-zA-Z-]+).*/)) {
     devMiddleware(
       {
         url: '/index.html'
