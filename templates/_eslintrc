@@ -20,7 +20,7 @@
     "quotes": [2, "single"],
     "comma-dangle": 0,
     "react/jsx-boolean-value": 1,
-    "jsx-quotes": [1, 'prefer-single'],
+    "jsx-quotes": [1, "prefer-single"],
     "react/jsx-no-undef": 1,
     "react/jsx-uses-react": 1,
     "react/jsx-uses-vars": 1,
